@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>会員情報入力サンプルページ</title>
+    </h:head>
+    <h:body>
+        会員情報を入力して下さい。
+        <h:form prependId="false">
+            <!-- 年齢だけflowScopeで渡してみる -->
+            <h:panelGrid columns="2">
+                <h:outputLabel value="姓"/>
+                <h:inputText id="lastNm" value="#{memberRegistrationBean.lastName}" required="true"/>
+                <h:outputLabel value="名" />
+                <h:inputText id="firstNm" value="#{memberRegistrationBean.firstName}" required="true"/>
+                <h:outputLabel value="年齢" />
+                <h:inputText value="#{flowScope.age}" />
+            </h:panelGrid>
+            
+            <h:panelGrid columns="2">
+                <h:commandButton value="特典を選ぶ" action="privilege" />
+                <h:outputText value="選択された特典コード:#{memberRegistrationBean.code}" />
+            </h:panelGrid>
+            
+            <h:commandButton value="メッセージ入力へ" action="message" />
+            <h:commandButton value="メッセージ入力をスキップ" action="skip" />
+        </h:form>
+    </h:body>
+</html>
+
