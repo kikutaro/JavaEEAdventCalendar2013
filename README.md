@@ -1,8 +1,10 @@
 JavaEEAdventCalendar2013
 ========================
 Java EE7のJSF2.2で追加となったFacesFlows(FlowScoped)のサンプルコードです。
-もう１つ別のリポジトリ(JavaEEAdventCalendar2013_2)のJARでパッケージされたフローを
+
+もう１つ以下リポジトリのJARでパッケージされたフローを
 参照して動くので、両方落としてお試しください。
+https://github.com/kikutaro/JavaEEAdventCalendar2013_2
 
 手元の確認環境は
 - Windows 7 Professional
