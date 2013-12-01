@@ -4,6 +4,7 @@ Java EE7のJSF2.2で追加となったFacesFlows(FlowScoped)のサンプルコ�
 
 もう１つ以下リポジトリのJARでパッケージされたフローを
 参照して動くので、両方落としてお試しください。
+フローはJavaのクラスで定義したパターンです。
 https://github.com/kikutaro/JavaEEAdventCalendar2013_2
 
 手元の確認環境は
